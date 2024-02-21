@@ -27,7 +27,7 @@ VALUES
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
-#Use a SELECT statement to list items and their price.
+#List all items and their price.
 SELECT price, item_name
 FROM superstore;
 
