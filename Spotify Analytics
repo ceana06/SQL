@@ -26,7 +26,7 @@ time_signature integer NOT NULL )
 
 -- Data inserted into table via a .csv file
 
--- Code to explore what is in data base
+-- Code to explore what is in database
 SELECT * FROM Spotifydata;
 
 -- Determinted What are the top 10 most popular songs and the name of the artist singing them?
