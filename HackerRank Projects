@@ -1,7 +1,26 @@
+#Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+SELECT DISTINCT CITY
+FROM station 
+WHERE LEFT(city,1) in('a','e','i','o','u')
+
+
+#Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table. 
+SELECT COUNT(CITY)-COUNT(DISTINCT CITY)
+FROM STATION;
+
+#Query a list of CITY and STATE from the STATION table. 
+SELECT city,state
+FROM station;
+
+#Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
+SELECT NAME
+FROM CITY
+WHERE COUNTRYCODE="JPN";
+
 # Query all columns for a city in CITY with the ID 1661. 
 select * from city where ID=1661;
 
 # Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN. 
 SELECT *
 FROM CITY
-WHERE COUNTRYCODE="JPN"
+WHERE COUNTRYCODE="JPN";
